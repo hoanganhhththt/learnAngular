@@ -324,7 +324,7 @@
       </svg>
     </a>
 </div>
-
+<app-hello></app-hello>
 <div class="content" role="main">
 
   <!-- Highlight Card -->
@@ -342,6 +342,7 @@
     </svg>
 
     <span>{{ title }} app is running!</span>
+    <app-hello></app-hello>
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
@@ -427,6 +428,7 @@
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
+      <app-hello></app-hello>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
       <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
       <pre *ngSwitchCase="'dependency'">ng add _____</pre>
